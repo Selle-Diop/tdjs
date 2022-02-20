@@ -1,0 +1,58 @@
+ *{
+     box-sizing: border-box;
+ }
+ body{
+     background-color: #b8c6db;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+     overflow: hidden;
+ }
+ .container{
+     background-color: #fff;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(100,100,100,0.1);
+     width: 30%;
+     overflow: hidden;
+ }
+ .quiz{
+     padding: 4rem;
+ }
+ h2{
+     padding: 1%;
+     text-align: center;
+     margin: 0;
+ }
+ ul {
+list-style-type: none;
+padding: 0;
+ }
+ ul li{
+     font-size: 1.3rem;
+     margin: 1% 0;
+ }
+ ul li label{
+     cursor: pointer;
+ }
+ button{
+     background-color: #4b366b;
+     color: #fff;
+     border: none;
+     display: block;
+     width: 100%;
+     cursor: pointer;
+     font-size: 2rem;
+     font-family: inherit;
+     padding: 3%;
+ }
+ button:hover{
+     background-color: #4b366b;
+     
+
+ }
+ button:focus{
+     outline: none;
+     background-color: #44b927;
+ }

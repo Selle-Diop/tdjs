@@ -50,7 +50,7 @@ label{
 .password { 
     position: relative;
 }
-.copy{
+.copy{ 
     position: absolute;
     /* left: 0; */
     right: 0;
