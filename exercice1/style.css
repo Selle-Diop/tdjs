@@ -1,0 +1,62 @@
+/* *{
+    box-sizing: border-box;
+} */
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    flex-wrap: wrap;
+    /* margin-right: 20%; */
+    background-image: url(kouli.jpeg);
+    /* background-repeat: repeat ; */
+    /* margin-right: 4%;
+    margin-left: 4%; */
+   justify-content: space-around;
+
+
+    
+    
+
+}
+ 
+#container{
+    border: 2px solid red;
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    
+
+   
+        
+   
+}
+ 
+.editcorbeille {
+    background-color: green;
+    padding: 3%;
+    /* border: 1px solid red; */
+}
+
+.area{
+    margin-left: -60%;
+     
+}
+.editcorbeille{
+    display: flex;
+   justify-content: flex-end ;
+   /* justify-content: space-evenly; */
+   
+}
+.edit{
+    margin-right: 2%;   
+}
+.addnote{
+    background-color: green;
+    padding: 1%;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
