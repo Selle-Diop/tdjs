@@ -6,13 +6,7 @@ var tab=["Mon Premier","Mon Deuxieme","Mon Troisieme","Mon Quatrieme"];
      p.innerHTML=`<p>${element}</p>`
      divGauche.appendChild(p)    
  });
- function allume(){ 
- if (divDroite!== '') {
-     
-     right.disabled=false
- }
-}
-prompt(allume());
+ 
  const pAll = document.querySelectorAll('p')
  const pDroite = document.querySelectorAll('.divDroite p')
 //  const divGauche = document.getElementById('divGauche')

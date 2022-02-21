@@ -13,8 +13,32 @@
                 b :"C",
                 c :"Python",
                 d:"javascipt",
-                correcte :"d"
+                reponse :"d",
 
+            },
+            {
+                question: "Qui est le meilleur joueur du monde?",
+                a: "Lionel Messi",
+                b: "Christiano Ronaldo",
+                c: "Sadio Mane",
+                d: "Kylian Mbappe",
+                reponse: "c",
+            },
+            {
+                question: "Qui a gagné la derniere Can?",
+                a: "Senegal",
+                b: "Cameroun",
+                c: "Burkina Faso",
+                d: "Egypte",
+                reponse: "a",
+            },
+            {
+                question: "Quel plat vous aimez le plus",
+                a: "Mafé",
+                b: "Thiep",
+                c: "Yassa",
+                d: "Soupe Kandja",
+                reponse: "b",
             }
  ]
 
@@ -35,24 +59,24 @@ function samaQuiz () {
    
 }
  function pasReponseSelectionne(){
-     choix.forEach(ch =>ch.Checked=false)
+     choix.forEach(ch =>ch.checked=false)
  }
  function reponseSelectionne (){
      let reponse
-     reponse.forEach(ch =>{
-         if(ch.Checked){
-             reponses=ch.id
+     choix.forEach(ch =>{
+         if(ch.checked){
+             reponse=ch.id
          }
      })
       return reponse 
         
  }
-//  -------------------------events----------------------
+//  -------------------------events---------------
 
 btnValider.addEventListener('click',()=>{
     const rep = reponseSelectionne ()
     if (rep) {
-        if (rep=== lesQuiz[monQuiz].correcte) {
+        if (rep=== lesQuiz[monQuiz].reponse) {
             score++
             
         }
@@ -64,8 +88,8 @@ btnValider.addEventListener('click',()=>{
     }
     else{
         quiz.innerHTML =
-        `<h2>Votre reponse ${score}/$(monQuiz.lenght)</h2>
-        <button onclick="location.reload()">`
+        `<h2>Votre score est ${score}/${4}.</h2>
+        <button onclick="location.reload()"> Rejouer !</button>`
     }
 })
 
