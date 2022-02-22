@@ -8,7 +8,7 @@ var tab=["Mon Premier","Mon Deuxieme","Mon Troisieme","Mon Quatrieme"];
  });
  
  const pAll = document.querySelectorAll('p')
- const pDroite = document.querySelectorAll('.divDroite p')
+ const pDroite = document.querySelectorAll('.divDroite ')
 //  const divGauche = document.getElementById('divGauche')
  const divDroite = document.getElementById('divDroite')
  const left = document.querySelector('#left')
@@ -17,7 +17,7 @@ var tab=["Mon Premier","Mon Deuxieme","Mon Troisieme","Mon Quatrieme"];
       
      pAll[i].addEventListener('click',function(){
          pAll[i].classList.toggle('active')
-         
+          
             
      })
     

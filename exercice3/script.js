@@ -1,4 +1,4 @@
- const number = document.querySelector('#number')
+ const number = document.querySelector('#longpassword')
  const majuscule = document.querySelector('#majuscule')
  const minuscule = document.querySelector('#minuscule')
  const nombre = document.querySelector('#nombre')
@@ -25,5 +25,5 @@ function Generator (debut,fin){
    return tab.split('')
 }
  
-  
+    
  
