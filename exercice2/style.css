@@ -41,7 +41,17 @@ button{
 p.active{
     background-color: #4b366b;
     color: white;
+    /* padding: 3%; */
+
 }
+p:hover {
+    padding: 4%;
+}
+p{
+    transition: padding 1s;
+    
+}
+
 .divDroite{
     margin-top: 18%;
     font-size: 3rem;

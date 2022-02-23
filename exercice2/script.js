@@ -3,7 +3,7 @@ const divGauche = document.getElementById('divGauche')
 var tab=["Mon Premier","Mon Deuxieme","Mon Troisieme","Mon Quatrieme"];
   tab.forEach(element => {
       const p =document.createElement('p')
-     p.innerHTML=`<p>${element}</p>`
+     p.innerHTML=`<p>${element}</p><br>`
      divGauche.appendChild(p)    
  });
  
@@ -15,7 +15,7 @@ var tab=["Mon Premier","Mon Deuxieme","Mon Troisieme","Mon Quatrieme"];
  const right = document.querySelector('#right')
  for (let i =0; i < pAll.length; i++) {
       
-     pAll[i].addEventListener('click',function(){
+     pAll[i].addEventListener('mouseover',function(){
          pAll[i].classList.toggle('active')
           
             
@@ -27,12 +27,14 @@ var tab=["Mon Premier","Mon Deuxieme","Mon Troisieme","Mon Quatrieme"];
  const pgauche = divGauche.querySelectorAll('p')
  pgauche.forEach(element => {   
      if (element.className=='active') {
-         divDroite.appendChild(element)
+         divDroite.appendChild(element) 
          
      }
      
  });
-     
+ 
+ activerBouton (divDroite,left)
+ activerBouton (divGauche,right) 
  })
 
  left.addEventListener('click',function() {
@@ -44,11 +46,30 @@ var tab=["Mon Premier","Mon Deuxieme","Mon Troisieme","Mon Quatrieme"];
          
      }
      
+     
  });
 
-     
- })
+activerBouton (divDroite,left)
+ activerBouton (divGauche,right)
+ });
+ 
 
+  function activerBouton (parent,bouton) { 
+     
+     if (parent.childNodes.length == 0) {
+        
+        bouton.disabled = true;
+         
+     }
+     else { 
+     bouton.disabled = false;
+    }
+
+ }
+  
+ activerBouton(divDroite,left)
+ 
+ 
 
 //--------------------------Functions-----------------------------------
 
